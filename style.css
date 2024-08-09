@@ -1,0 +1,131 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+    
+}
+.container1{
+    height: 50px;
+    width: 100vw;
+    align-content: center;
+    text-align: center;
+    background-color: rgb(237, 236, 244);
+    font-size: 17px;
+    border: 1px solid rgb(167, 160, 160);
+}
+header{
+    background-color: rgb(254, 252, 250);
+    min-height: 50px;
+    max-width: 100vw;
+    margin: 0 auto;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    /* position: fixed; */
+    top: 0;
+    left: 0;
+    right: 0;
+}
+.logo img{
+    display: flex;
+    align-items: flex-start;
+    height: 70px;
+    width: 12vw;
+}
+.left {
+  width: 55vw;
+  display: flex;
+  justify-content: flex-start;
+  gap: 15px;
+
+}
+.left>a {
+    text-decoration: none;
+    color: black;
+    font-size: 17px;
+  }
+.left>a:hover {
+    color: rgb(124, 114, 213);
+  }
+.right{
+    width: 25vw;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  font-size: 17px;
+}
+
+.theme-toggle, .login, .signup{
+     background-color: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+}
+.search{
+    display: flex;
+    justify-content: center;
+    width: 80px;
+    height: 40px;
+    border-radius: 15px;
+}
+.signup {
+    background-color: #000;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    width: 140px;
+    height: 40px;
+
+}
+
+.signup:hover {
+    background-color: #333;
+}
+
+.container2{
+    height: 35px;
+    width: 100vw;
+    background-color: rgb(237, 236, 244);
+    font-size: 17px;
+    border: 1px solid rgb(167, 160, 160);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.container2 a{
+    text-decoration: none;
+    color: black;
+    font-size: 17px;
+}
+.ref{
+   margin-left:  20px;
+}
+.language{
+    margin-right:  20px;
+}
+
+.box{
+    background-color: #93ba91;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    padding-top: 50px;
+}
+.box1{
+    width: 18vw;
+    background-color: #9197ba;
+ 
+}
+.box2{
+    width: 45vw;
+    background-color: #b971a6;
+}
+.box3{
+    width: 20vw;
+    height: 40vh;
+    background-color: #a57141;
+}
