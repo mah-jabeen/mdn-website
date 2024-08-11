@@ -1,48 +1,369 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" type="" href="style.css">
-</head>
-<body>
+    <title>MDN Website</title>
+    <link rel="stylesheet" type href="style.css">
+  </head>
+  <body>
     <div class="container1">
-        <p>Get real-time assistance with your coding queries. Try AI Help now!</p>
+      <p>Get real-time assistance with your coding queries. Try AI Help now!</p>
     </div>
     <header>
-        <div class="logo">
-            <img src="logo.jpg" alt="mainlogo">
-        </div>
+      <div class="logo">
+        <img src="logo.jpg" alt="mainlogo">
+      </div>
 
-<nav>
-    <span class="left">
-        <a> References</a>
-        <a> Guides</a>
-        <a> Plus</a>
-        <a>Curriculum</a>
-        <a>Blog</a>
-        <a>Tools</a>
-    </span>
-</nav>
-    <span class="right">
+      <nav>
+        <span class="left">
+          <a> References</a>
+          <a> Guides</a>
+          <a> Plus</a>
+          <a>Curriculum</a>
+          <a>Blog</a>
+          <a>Tools</a>
+        </span>
+      </nav>
+      <span class="right">
         <button type="button" class="theme-toggle">Theme</button>
-            <!-- <button  type="button" class="search">Search</button> -->
-             <input type="search" class="search" placeholder="search">
-            <button  type="button" class="login">Log in</button>
-            <button  type="button" class="signup">Sign up for free</button>
-    </span>  
+        <!-- <button  type="button" class="search">Search</button> -->
+        <input type="search" class="search" placeholder="search">
+        <button type="button" class="login">Log in</button>
+        <button type="button" class="signup">Sign up for free</button>
+      </span>
     </header>
 
     <div class="container2">
-        <a href="" class="ref">References</a>
-        <a href="" class="language">English (US)</a>
+      <a href class="ref">References</a>
+      <a href class="language">English (US)</a>
     </div>
 
     <div class="box">
-        <div class="box box1"></div>
-        <div class="box box2"></div>
-        <div class="box box3"></div>
+      <div class="box box1">
+        <button type="button" class="filter"> Filter</button> <br>
+        <form action="get" class="form">
+          <select name="Accessibility">
+            <option value="Accessibility">Accessibility</option>
+            <option value="Guides"> Guides</option>
+            <option value="Learn accessibility"> Learn accessibility</option>
+            <option value="WCAG">WCAG</option>
+          </select>
+
+          <br>
+          <select name="Cascading Style Sheets" class="select">CSS: Cascading
+            Style Sheets
+            <option value="CSS:Cascadingstylesheet"> <a href="">CSS: Cascading Style Sheets</a></option>
+            <option value="cssfirststep"> CSS first step</option>
+            <option value="CSSbuildingblocks">CSS building blocks</option>
+            <option value="Stylingtext">Styling Text</option>
+          </select> <br>
+
+          <select name="developerguide" id>
+            <option value="devguide"> <a href="">Developer guides</a> </option>
+          </select>
+          <br>
+          <select name="EXSLT" id>
+            <option value="EXST">EXSLT</option>
+            <option value="comn">Common (exsl)</option>
+            <option value="Math">Math</option>
+          </select> <br>
+
+          <select name="Eventreference" id>
+            <option value="evntref"> <a href="">Event reference</a></option>
+            <option value="Creatingandtriggeringevents">Creating and triggering
+              events</option>
+            <option value="Eventhandling">Event handling (overview)</option>
+          </select>
+          <br>
+
+          <select name="html">
+            <option value="html"> <a href="">HTML: HyperText Markup Language</a></option>
+            <optgroup label="Tutorials">
+              <option value="intro">Introduction to HTML</option>
+              <option value="Multimedia">Multimedia and embedding</option>
+              <option value="tab">HTML tables</option>
+            </optgroup>
+            <optgroup label="References">
+              <option name="ele" id>HTML elements</option>
+            </optgroup>
+          </select>
+          <br>
+
+          <select name="http">
+            <option value="HTTP"> <a href="">HTTP</a></option>
+
+            <optgroup label="Guides">
+              <option value="res">Resources and URIs</option>
+              <option value="url">Data URLs</option>
+              <option value="mime">Introduction to MIME types</option>
+
+            </optgroup>
+          </select><br>
+
+          <select name="java">
+            <option value="JavaScript"> <a href="">JavaScript</a></option>
+            <optgroup label="Tutorials">
+
+              <option value="beg">Complete beginners</option>
+              <option value="bas">JavaScript basics</option>
+              <option value="firststep">JavaScript first steps</option>
+
+            </optgroup>
+          </select>
+          <br>
+
+          <select name="mml">
+            <option value="Mathml"> <a href=""> MathML </a></option>
+
+            <optgroup label="Guides">
+              <option value="auth">Authoring MathML</option>
+              <option value="fonts">Fonts for MathML</option>
+
+            </optgroup>
+          </select>
+          <br>
+
+          <select name="search">
+            <option value="dessearch"> <a href=""> OpenSearch description format</a></option>
+
+            <optgroup label="Browserext">
+              <option value="start">Getting start</option>
+              <option value="con">Concepts</option>
+            </optgroup>
+          </select>
+          <br>
+
+          <select name="priv">
+            <option value="webpriv"> <a href="">Privacy on the web</a>
+            </option>
+
+            <option value="track">Firefox tracking protection</option>
+            <option value="box">Privacy sandbox</option>
+            <option value="sand">Privacy sandbox enrollment</option>
+          </select>
+          <br>
+
+          <select name="apps">
+            <option value="webapp"> <a href="">Progressive web apps</a></option>
+
+            <optgroup label="Guides">
+              <option value="prog">What is a progressive web app?</option>
+              <option value="webapp">Installing and uninstalling web
+                apps</option>
+            </optgroup>
+          </select>
+          <br>
+
+          <select name="svg">
+            <option value="svg"> <a href="">SVG: Scalable Vector Graphics</a></option>
+            <optgroup label="Tutorials">
+              <option value="intro">Introducing SVG from scratch</option>
+            </optgroup>
+            <optgroup label="References">
+              <option value="ele">elements</option>
+              <option value="attr">attributes</option>
+            </optgroup>
+          </select> <br>
+
+          <select name="sec">
+            <option value="sec"> <a href="">Security on the web</a></option>
+              <option value="rel">Rel between security and privacy</option>
+              <option value="features">Secuirty features</option>
+          </select> <br>
+
+          <select name="frag">
+            <option value="frag"> <a href="">Text Fragment</a></option>
+            <option value="syn">Syntax</option>
+              <option value="ex">Examples</option>
+              <option value="ref">References</option>
+          </select> <br>
+
+          <select name="tut">
+            <option value="tut"> <a href="">Tutorials</a></option>
+            <option value="html">HTML Tutorials</option>
+              <option value="css">CSS Tutorials</option>
+              <option value="java">JavaScript Tutorials</option>
+          </select> <br>
+
+          <select name="APIs">
+            <option value="APIs"> <a href=""> Web APIs</a></option>
+            <option value="spec">Specifications</option>
+              <option value="inter">Interface</option>
+              <option value="seealso">See also</option>
+          </select> <br>
+
+          <select name="manifests">
+            <option value="manifests"> <a href="">Web app manifests</a></option>
+            <option value="Members">Members</option>
+              <option value="example">Example manifest</option>
+              <option value="dep">Deploying a manifest</option>
+          </select> <br>
+
+          <select name="tech">
+            <option value="tech"> <a href="">Web media technologies</a></option>
+            <option value="ref">References</option>
+            <option value="guides">Guides</option>
+              <option value="ex">Examples</option>
+          </select> <br>
+
+          
+          <select name="perf">
+            <option value="perf"> <a href="">Web Performance</a></option>
+            <option value="guides">Key performance guides</option>
+            <option value="tut">Beginner's tutorials</option>
+              <option value="apis">Using Performance APIs</option>
+          </select> <br>
+
+          <select name="driver">
+            <option value="driver"> <a href="">WebDriver</a></option>
+            <option value="usage">Usage</option>
+            <option value="ref">References</option>
+              <option value="spec">Specifications</option>
+          </select> <br>
+
+          <select name="xml">
+            <option value="xml"> <a href="">XML: Extensible Markup Language</a></option>
+            <option value="usage">Parsing and serializing</option>
+            <option value="intro"> XML introduction</option>
+          </select> <br>
+
+          <select name="xpath">
+            <option value="xpath"> <a href="">XPATH</a></option>
+            <option value="docu">Documentation</option>
+            <option value="tools">Tools</option>
+          </select> <br>
+          
+          <select name="xslt">
+            <option value="xslt"> <a href="">XSLT</a></option>
+            <option value="overview">An overview</option>
+            <option value="more">for further reading</option>
+          </select> <br>
+        </form>
+      </div>
+      <div class="box box2">
+        <h1 class="heading1"> Web technology for developers</h1>
+
+        <p class="paragraph p">
+        The open Web presents incredible opportunities for developers. To take full advantage of these technologies,
+        you need to know how to use them. Below you'll find links to our Web technology documentation.
+      </p>
+      <h2 class="heading2"> Documentation for Web developers</h2>
+      <u style="color: #6DA9DC;" id="p17">Web Developer Guide</u>
+      <p class="paragraph p">
+        The Web Developer Guide provides useful how-to content to help you actually use Web technologies to do what
+        you want or need to do.
+      </p>
+      <u style="color: #6DA9DC;">Tutorials for Web developers</u>
+      <p class="paragraph p" id="p16">
+        Tutorials to take you step-by-step through learning HTML, CSS, JavaScript, and Web APIs. <br><br>
+      </p>
+
+      <u style="color: #6DA9DC;">
+        Accessibility</u><br>
+      <p class="paragraph p" id="p17">
+        Enabling as many people as possible to use websites, even when those people's abilities are limited in some
+        way.
+      </p>
+      <u style="color: #6DA9DC;">
+        Performance</u><br>
+      <p class="paragraph p" id="p18">
+        Making content as available and interactive as possible, as soon as possible.
+      </p>
+      <u style="color: #6DA9DC;">
+        Security</u><br>
+      <p class="paragraph p">
+        Protecting users from data leaks and data theft, side-channel attacks, and attacks such as cross-site
+        scripting, content injection, and click-jacking.
+      </p>
+      <h2 class="heading2"> Web technology references</h2>
+   
+      <u style="color: #6DA9DC;">Web APIs</u><br>
+      <p class="paragraph p" id="p7">
+        JavaScript programming APIs you can use to build apps on the Web.
+      </p>
+      <u style="color: #6DA9DC;">HTML</u>
+      <p class="paragraph p">
+        HTML provides the fundamental building blocks for structuring Web documents and apps.
+      </p>
+      <u style="color: #6DA9DC;">CSS</u>
+      <p class="paragraph p" id="p5">
+        Cascading Style Sheets are used to describe the appearance of Web documents and apps.
+      </p>
+      <u style="color: #6DA9DC;">JavaScript</u>
+      <p class="paragraph p" id="p8">
+        JavaScript is the Web's native programming language.
+
+      </p>
+      <u style="color: #6DA9DC;">WebAssembly</u>
+      <p class="paragraph p" id="p1">
+
+        WebAssembly allows programs written in C, C++, Rust, Swift, C#, Go, and more to run on the Web.
+      </p>
+      <u style="color: #6DA9DC;">Events</u>
+      <p class="paragraph p" id="p3">
+        Events are what you build Web apps to react to; for example, when a Web page finishes loading, or a user
+        selects something, presses a key, resizes a window, submits a form, or pauses a video.
+      </p>
+      <u style="color: #6DA9DC;">HTTP</u>
+      <p class="paragraph p" id="p2">HTTP is the fundamental Internet protocol for fetching documents, stylesheets,
+        scripts,
+        images, videos, fonts, and other resources over the Web — and for sending data back to Web servers.
+      </p>
+      </p>
+      <u style="color: #6DA9DC;">Media</u>
+      <p class="paragraph p" id="p4">
+        Formats, codecs, protocols, APIs, and techniques for embedding and streaming video, audio, and image content
+        in Web documents and apps.
+      </p>
+      </p>
+      <u style="color: #6DA9DC;">SVG</u>
+      <p class="paragraph p" id="p6">
+        Scalable Vector Graphics lets you create images that scale smoothly to any size.
+      </p>
+      </p>
+      <u style="color: #6DA9DC;">MathMl</u>
+      <p class="paragraph p" id="p9">
+        MathML lets you display complex mathematical notation on the Web.
+      </p>
+      </p>
+      <u style="color: #6DA9DC;" id="p10">Web Components</u>
+      <p class="paragraph p">
+        Web Components are custom elements that you can define and reuse in your Web apps.
+      </p>
+      </p>
+      <u style="color: #6DA9DC;" id="p13">WebDriver</u>
+      <p class="paragraph p">WebDriver is a browser-automation mechanism for remotely controlling a browser by
+        emulating the actions of a real person using the browser. It's widely used for cross-browser testing of Web
+        apps.
+      </p>
+      </p>
+      <u style="color: #6DA9DC;" id="p14">WebExtentions</u>
+      <p class="paragraph p">Web Extensions are a way for you to give users enhanced capabilities in their browsers —
+        for doing things such as blocking ads and other content, customizing the appearance of pages, and more.
+      </p>
+      </p>
+      <u style="color: #6DA9DC;" id="p15">Web App Manifests</u>
+      <p class="paragraph p">Web App Manifests let you enable users to install Web apps to their device home screens,
+        with aspects such as portrait/landscape screen orientation and display mode (e.g., full screen) pre-set.
+      </p>
+      </p>
+      <u style="color: #6DA9DC;" id="p11">Progressive Web Apps (PWAs)</u>
+      <p class="paragraph p">Progressive Web Apps provide a user experience similar to native mobile apps.
+      </p>
+      </p>
+      <u style="color: #6DA9DC;" id="pp12">Glossary</u>
+      <p class="paragraph p">
+        Definitions of Web-related terms
+      </p>
+    
+      </div>
+      <div class="box box3">
+        <h4 class="h4"> In this article </h4>
+        <p class="text">Documentation for Web developers</p>
+        <p class="text"> Web technology references</p>
+        <p class="text">Developer tools documentation</p>
+      </div>
     </div>
-</body>
+  </body>
 </html>
